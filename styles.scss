@@ -1,16 +1,19 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin:0 auto;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
 .form {
   display:flex;
   justify-content: center;
   padding:104px;
   background-color:#130F1C;
 }
+
 .login-container {
   display:flex;
   background-color:#1F1B29;
@@ -20,14 +23,17 @@ body {
   box-shadow: 40px 40px 60px 0px #0000001A;
   border-radius:10px;
 }
+
 .login-container form, .form-input-field, .login-container-submit-button{
   width:100%;
 }
+
 .form-label-style {
   color: #BAB9BD;
   font-size:16px;
   line-height:24px;
 }
+
 .form-input-field {
   color: #99969E;
   font-size:16px;
@@ -39,13 +45,23 @@ body {
   margin-top:4px;
   margin-bottom:16px;
 }
-.subscribe-news {
+
+.subscribe-news-container {
+  margin:8px 0;
+}
+
+.subscribe-news-slider-container {
+  margin-right:8px;
+  float:left;
+}
+
+.subscribe-news-span {
   display:block;
   color:#BAB9BD;
   font-size:14px;
   line-height:20px;
-  margin:8px 0;
 }
+
 .login-container-submit-button {
   background-color:#651FFF;
   border-radius:5px;
@@ -56,10 +72,12 @@ body {
   line-height:24px;
   margin-bottom:32px;
 }
+
 .login-container-submit-button:hover {
   opacity:0.8;
   cursor:pointer;
 }
+
 .forgot-password {
   display:block;
   text-decoration:underline;
@@ -68,9 +86,11 @@ body {
   line-height:24px;
   text-align:center;
 }
+
 .forgot-password:hover{
 font-size: 16.5px;
 }
+
 .divider-line {
   width:100%;
   height:2px;
@@ -78,6 +98,7 @@ font-size: 16.5px;
   border-radius: 11px;
   margin:32px 0;
 }
+
 .alt-login-txt {
   display:block;
   text-align:center;
@@ -85,10 +106,12 @@ font-size: 16.5px;
   line-height:24px;
   color:#5A5761;
 }
+
 .alt-login-button-container {
   display:flex;
   margin-top:16px;
 }
+
 .alt-login-button-google {
   width: calc(50% - 8px);
   margin:0;
@@ -101,6 +124,7 @@ font-size: 16.5px;
   border-radius:5px;
   border:none;
 }
+
 .alt-login-button-fb {
   width: calc(50% - 8px);
   margin:0;
@@ -119,3 +143,69 @@ font-size: 16.5px;
   cursor:pointer;
   border:2px solid #2E2A36;
 }
+
+/* ---------- Subscribe new switch ----------*/
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 16px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E9E9E9;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #FD7918;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #FD7918;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* ---------- End of subscribe new switch ----------*/
