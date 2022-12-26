@@ -18,28 +18,78 @@
     <div class="login-container">
         <form>
             <label class="form-label-style">Username: <br>
-                <input class="form-input-field" type="text" placeholder="Your username" required autofocus>
+                <input class="login-form-input-field" type="text" placeholder="Your username" required autofocus>
             </label><br>
             <label class="form-label-style">Password: <br>
-                <input class="form-input-field" type="password" placeholder="Your password" required>
+                <input class="login-form-input-field" type="password" placeholder="Your password" required>
             </label><br>
             <div class="subscribe-news-container">
-                <div class="subscribe-news-slider-container">
                     <label class="switch">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" id="label1" checked>
                         <span class="slider round"></span>
                     </label>
-                </div>
-                <span class="subscribe-news-span">Subscribe to News</span>
+                <label for="label1" class="subscribe-news-label">Subscribe to News</label>
             </div>
             <br>
-            <input class="login-container-submit-button" type="submit" value="Sign in">
+            <input class="form-submit-button" type="submit" value="Sign in">
             <a class="forgot-password" href="#">Forgot your password?</a>
             <div class="divider-line"></div>
             <span class="alt-login-txt">or continue with</span>
             <div class="alt-login-button-container">
                     <input class="alt-login-button-google" type="button">
                     <input class="alt-login-button-fb" type="button">
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="form">
+    <div class="contact-container">
+            <h2 class="form-header">Contact Us</h2>
+        
+        <form class="contact-container-form">
+
+                <div class="contact-form-each-input-container">
+                    <label class="form-label-style">Input label: <br>
+                        <input class="contact-form-input-field" type="text" placeholder="Placeholder text" required autofocus>
+                    </label>
+                </div>
+
+                <div class="contact-form-each-input-container">
+                    <label class="form-label-style">Input label: <br>
+                        <input class="contact-form-input-field" type="text" placeholder="Placeholder text" required>
+                    </label>
+                </div>
+
+                <div class="contact-form-each-input-container">
+                    <label class="form-label-style">Input label: <br>
+                        <input class="contact-form-input-field" type="text" placeholder="Placeholder text" required autofocus>
+                    </label>
+                </div>
+
+                <div class="contact-form-each-input-container">
+                    <label class="form-label-style">Input label: <br>
+                        <input class="contact-form-input-field" type="text" placeholder="Placeholder text" required>
+                    </label>
+                </div>
+
+            <div class="subscribe-news-container-2">
+                <label class="custom-checkbox-container">
+                    <input type="checkbox" id="label2" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label for="label2" class="subscribe-news-label-2">Subscribe to News</label>
+            </div>
+
+            <div class="contact-form-text-area-container">
+                <label>
+                    <span class="contact-form-text-area-label">Text Area label</span><br>
+                    <textarea class="contact-form-text-area" placeholder="Placeholder Text"></textarea>
+                </label>
+            </div>
+
+            <div class="contact-form-submit-button-container">
+                <input type="button" class="form-submit-button" type="submit" value="Submit">
             </div>
         </form>
     </div>

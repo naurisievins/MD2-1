@@ -9,22 +9,31 @@ body {
 
 .form {
   display:flex;
-  justify-content: center;
+  flex-direction: row;
   padding:104px;
   background-color:#130F1C;
 }
 
+h2 {
+  margin:0;
+  padding:0;
+}
+
+/* -------------------- Login form --------------------*/
+
 .login-container {
   display:flex;
+  flex-wrap: wrap;
   background-color:#1F1B29;
   width:428px;
+  min-width:320px;
   margin:0 auto;
   padding:32px;
   box-shadow: 40px 40px 60px 0px #0000001A;
   border-radius:10px;
 }
 
-.login-container form, .form-input-field, .login-container-submit-button{
+.login-container form, .login-form-input-field, .form-submit-button{
   width:100%;
 }
 
@@ -34,7 +43,7 @@ body {
   line-height:24px;
 }
 
-.form-input-field {
+.login-form-input-field {
   color: #99969E;
   font-size:16px;
   line-height:24px;
@@ -47,22 +56,23 @@ body {
 }
 
 .subscribe-news-container {
+  display:flex;
+  flex-wrap:nowrap;
+  width:100%;
   margin:8px 0;
+  line-height: 20px;
+  align-items:center;
+  column-gap:8px;
 }
 
-.subscribe-news-slider-container {
-  margin-right:8px;
-  float:left;
-}
-
-.subscribe-news-span {
-  display:block;
+.subscribe-news-label {
+  display:inline-block;
   color:#BAB9BD;
   font-size:14px;
   line-height:20px;
 }
 
-.login-container-submit-button {
+.form-submit-button {
   background-color:#651FFF;
   border-radius:5px;
   border:none;
@@ -70,10 +80,9 @@ body {
   color:#FFFFFF;
   font-size:16px;
   line-height:24px;
-  margin-bottom:32px;
 }
 
-.login-container-submit-button:hover {
+.form-submit-button:hover {
   opacity:0.8;
   cursor:pointer;
 }
@@ -85,6 +94,7 @@ body {
   font-size: 16px;
   line-height:24px;
   text-align:center;
+  margin-top:32px;
 }
 
 .forgot-password:hover{
@@ -144,7 +154,7 @@ font-size: 16.5px;
   border:2px solid #2E2A36;
 }
 
-/* ---------- Subscribe new switch ----------*/
+/* ---------- Subscribe news switch ----------*/
 
 /* The switch - the box around the slider */
 .switch {
@@ -172,6 +182,7 @@ font-size: 16.5px;
   background-color: #E9E9E9;
   -webkit-transition: .4s;
   transition: .4s;
+  padding-right:18px;
 }
 
 .slider:before {
@@ -208,4 +219,206 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-/* ---------- End of subscribe new switch ----------*/
+/* ---------- End of subscribe news switch ----------*/
+/* -------------------- End of login form --------------------*/
+
+/* -------------------- Contact Us form --------------------*/
+
+.contact-container {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color:#1F1B29;
+  width:665px;
+  min-width:320px;
+  margin:0 auto;
+  padding:32px;
+  box-shadow: 40px 40px 60px 0px #0000001A;
+  border-radius:10px;
+  justify-content:center;
+}
+
+.form-header {
+  flex-basis:100%;
+  font-size: 32px;
+  font-weight: 500;
+  color: #99969E;
+  line-height:40px;
+  margin-bottom:32px;
+}
+
+.contact-form-input-field{
+  color: #99969E;
+  font-size:16px;
+  line-height:24px;
+  padding:12px;
+  background-color:#2E2A36;
+  border-radius:5px;
+  border:none;
+  margin-top:4px;
+  margin-bottom:16px;
+  width:100%;
+}
+
+.contact-container-form{
+   display:flex;
+   flex-wrap: wrap;
+   column-gap:16px;
+}
+
+.contact-form-each-input-container {
+  width: calc(50% - 8px);
+  min-width:256px;
+}
+
+.subscribe-news-container {
+  width:100%;
+}
+
+.contact-form-text-area-container {
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+  margin-bottom:31px;
+  text-align:center;
+}
+
+.contact-form-text-area{
+  resize:vertical;
+  width: 99%; //100%
+  max-width:99%; //100%
+  min-height:102px;
+  padding: 8px 2px 2px 12px;
+  border-radius:5px;
+  border:none;
+  background-color: #2E2A36;
+  color: #BAB9BD;
+  margin:4px 0 0 0;
+}
+
+.contact-form-text-area-label {
+  float:left;
+  font-size:16px;
+  line-height:24px;
+  color: #BAB9BD;
+}
+
+.contact-form-submit-button-container {
+  width:100%;  
+  text-align:right;
+}
+
+.contact-form-submit-button-container input{
+  width:141px;
+}
+
+.subscribe-news-container-2 {
+  margin-top:23px;
+  margin-bottom:29px;
+  width:100%;
+  line-height: 20px;
+}
+
+/* ---------- Custom checkbox ----------*/
+
+.custom-checkbox-container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.custom-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius:4px;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-checkbox-container input:checked ~ .checkmark {
+  background-color: #FD7918;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-checkbox-container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ---------- End of Custom checkbox ----------  */
+
+.subscribe-news-label-2 {
+  display:inline-block;
+  color:#BAB9BD;
+  font-size:14px;
+  line-height:20px;
+  margin-left:28px;
+}
+
+
+
+
+
+
+/* ----------------------- Media --------------------- */
+
+@media screen and (max-width: 800px) {
+  .contact-form-each-input-container {
+    width:100%;
+  }
+  .contact-form-submit-button-container input{
+    width:100%;
+  }
+  .contact-form-text-area-container {
+    margin-bottom:7px;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  .form {
+    padding:0px;
+    padding-bottom:10px;
+  }
+}
