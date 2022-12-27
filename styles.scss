@@ -12,6 +12,7 @@ body {
   flex-direction: row;
   padding:104px;
   background-color:#130F1C;
+  overflow:overlay;
 }
 
 h2 {
@@ -268,7 +269,7 @@ input:checked + .slider:before {
 
 .contact-form-each-input-container {
   width: calc(50% - 8px);
-  min-width:256px;
+  min-width:184.5px;
 }
 
 .subscribe-news-container {
@@ -293,6 +294,9 @@ input:checked + .slider:before {
   border:none;
   background-color: #2E2A36;
   color: #BAB9BD;
+  font-size: 16px;
+  line-height:24px;
+  font-family: 'Roboto Condensed', sans-serif;
   margin:4px 0 0 0;
 }
 
@@ -397,6 +401,209 @@ input:checked + .slider:before {
   margin-left:28px;
 }
 
+/* -------------------- End of Contact Us form --------------------*/
+
+/* -------------------- Contact Us form-2 --------------------*/
+
+.contact-container-large {
+  display:flex;
+  width:100%;
+  justify-content:center;
+}
+
+.contact-container-2 {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color:#1F1B29;
+  width:449px;
+  min-width:320px;
+  padding:32px;
+  box-shadow: 40px 40px 60px 0px #0000001A;
+  border-radius:10px;
+  justify-content:center;
+  overflow:visible;
+}
+
+.contact-container-left-side {
+  display:flex;
+  flex-wrap:wrap;
+  width:216px;
+  height: 607px;
+  background-color: #651FFF;
+  border-radius: 10px 0 0 10px;
+  padding:46px 16px;
+  align-content:start;
+  overflow:visible;
+}
+
+.contact-form-each-input-container-full-width {
+  width:100%;
+}
+
+.contact-form-text-area-2{
+  resize:vertical;
+  width: 99%; //100%
+  max-width:99%; //100%
+  min-height:84px;
+  padding: 8px 2px 2px 12px;
+  border-radius:5px;
+  border:none;
+  background-color: #2E2A36;
+  color: #BAB9BD;
+  font-size: 16px;
+  line-height:24px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin:4px 0 0 0;
+}
+
+.contact-info-1 {
+  font-size:16px;
+  line-height:24px;
+  color:#FFF;
+  margin-bottom:32px;
+}
+.contact-info-2 {
+  justify-content: center;
+  font-size:16px;
+  line-height:24px;
+  color:#FFF;
+  margin-bottom:16px;
+}
+
+.contact-info-2 img {
+  margin-right:10px;
+  vertical-align: middle;
+}
+
+.contact-form-text-area-container-2 {
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+  margin-bottom:31px;
+  text-align:center;
+}
+
+/* -------------------- End of Contact Us form-2 --------------------*/
+
+/* -------------------- Checkout form --------------------*/
+
+.checkout-container {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color:#1F1B29;
+  width:665px;
+  min-width:320px;
+  box-shadow: 40px 40px 60px 0px #0000001A;
+  border-radius:10px;
+  padding:32px;
+  gap: 32px;
+  margin:0 auto;
+}
+
+.checkout-form-header {
+  display:flex;
+  font-size: 32px;
+  font-weight: 500;
+  color: #99969E;
+  line-height:40px;
+}
+
+.checkout-form-order-container {
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  min-width:256px;
+}
+
+.checkout-form-payment-container {
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  min-width:256px;
+}
+
+.checkout-container-half {
+  float:left;
+  width:50%;
+  min-width:256px;
+}
+
+.checkout-container-half-2 {
+  float:left;
+  width:50%;
+}
+
+.checkout-form-submit-button-container {
+  width:100%;
+  text-align:right;
+}
+
+.checkout-form-submit-button-container input {
+  width:153px;
+}
+
+.checkout-container-half-title {
+  font-size:20px;
+  line-height:28px;
+  color:#BAB9BD;
+  width:100%;
+  min-width:256px;
+  margin-bottom:16px;
+  letter-spacing: -0.02em;
+}
+
+.checkout-order-text-1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#99969E;
+}
+
+.checkout-order-text-2 {
+  display:block;
+  font-size: 14px;
+  line-height: 20px;
+  color:#5A5761;
+}
+
+.checkout-order-text-padding {
+  padding-left:56px;
+}
+
+.checkout-form-input-field{
+  color: #99969E;
+  font-size:16px;
+  line-height:24px;
+  padding:12px 14px 12px 12px;
+  background-color:#2E2A36;
+  border-radius:5px;
+  border:none;
+  width: calc(100% - 8px);
+  margin-top:4px;
+}
+
+.checkout-form-input-field-small{
+  color: #99969E;
+  font-size:16px;
+  line-height:24px;
+  padding:12px 14px 12px 12px;
+  background-color:#2E2A36;
+  border-radius:5px;
+  border:none;
+  width: calc(100% - 8px);
+  margin-top:4px;
+}
+
+.checkout-order-text-2 span{
+  display:block;
+  padding-top:4px;
+}
+
+
 
 
 
@@ -404,7 +611,7 @@ input:checked + .slider:before {
 
 /* ----------------------- Media --------------------- */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 872px) {
   .contact-form-each-input-container {
     width:100%;
   }
@@ -414,6 +621,48 @@ input:checked + .slider:before {
   .contact-form-text-area-container {
     margin-bottom:7px;
   }
+  .contact-form-text-area-container-2 {
+    margin-bottom:-4px;;
+  }
+  .contact-container-left-side {
+    display:none;
+  }
+  .contact-form-text-area{
+    min-height:113px;
+  }
+  .checkout-container-half {
+    width:100%;
+      &:first-of-type {
+        border-bottom: 2px solid #5A5761;
+        border-radius:1px;
+        padding-bottom:32px;
+        margin-bottom:32px;
+      }
+  }
+  .checkout-form-input-field{
+    margin-bottom:8px;
+    width:100%;
+  }
+  .checkout-form-input-field-small {
+    width: calc(100% - 4px);
+  }
+  .checkout-form-submit-button-container input {
+    width:100%;
+  }
+  .float-right {
+    float:right;
+  }
+  .checkout-order-text-2-row br {
+    display:none;
+  }
+  .checkout-order-text-2-row {
+    display:inline !important;
+    margin-right:16px;
+  }
+  .checkout-container {
+    padding:32px 16px;
+  }
+
 }
 
 @media screen and (max-width: 528px) {
